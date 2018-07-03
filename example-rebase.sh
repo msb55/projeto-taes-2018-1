@@ -11,5 +11,4 @@ echo "created on: master" > rebase-file.txt
 git add rebase-file.txt
 git commit -m "master: added rebase-file.txt"
 
-git checkout example-rebase
-git rebase master
+git rebase example-rebase
