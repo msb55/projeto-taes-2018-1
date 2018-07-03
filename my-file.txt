@@ -1,1 +1,1 @@
-"This is the stash test file"
+"This is the stash test file"edited on: example-stash
