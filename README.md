@@ -12,7 +12,7 @@ A proposta do projeto é, a princípio, capturar conflitos gerados a partir das 
     	name = "merge driver para conflitos locais"
     	driver = java  -jar "\"$HOME/jFSTMerge.jar\"" -f %A %O %B -o %A -g -n %P
     ```
-3. Edite seu arquivo .gitattributes e adicione a seguinte linha
+3. Edite seu arquivo .gitattributes e adicione a seguinte linha, caso ainda não exista esse arquivo em seu repositório local, crie-o.
     ```
     * merge=my-merge
     ```
@@ -53,7 +53,7 @@ Devido às limitações das informações fornecidas ao merge driver, não é po
 Exemplo: Para um confilto com o arquivo ```configuration.properties``` em 20/06/2018 às 15:07:33, as revisões desse arquivos serão salvos no diretório: ```configuration_20-06-2018_15-07-33/``` e registrado no arquivo csv.
 
 ## Testes
-Nesse repositório encontra-se dois scripts batch simulando dois cenários: merge e stash.
+Nesse repositório encontra-se três scripts batch simulando os três cenários: merge, stash e rebase.
 
 Para executar, faça um clone desse repositório, realize os passos de como configurar, e execute os scripts no mesmo diretório.
 

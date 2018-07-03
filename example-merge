@@ -2,13 +2,13 @@ git checkout master
 git branch -D example-merge
 
 git checkout -b example-merge
-echo "created on: example-merge" > my-merge-file.txt
-git add my-file.txt
-git commit -m"example-merge: added my-merge-file.txt"
+echo "created on: example-merge" > merge-file.txt
+git add merge-file.txt
+git commit -m"example-merge: added merge-file.txt"
 
 git checkout master
-echo "created on: master" > my-merge-file.txt
-git add my-file.txt
-git commit -m"master: added my-merge-file.txt"
+echo "created on: master" > merge-file.txt
+git add merge-file.txt
+git commit -m"master: added merge-file.txt"
 
 git merge -m "Merged in example-merge" example-merge
